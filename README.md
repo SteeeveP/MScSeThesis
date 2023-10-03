@@ -163,4 +163,4 @@ Screenshots of Copilot suggestions
 ![visualizations](experiments/chatgpt_bard_copilot/copilot_after_visualization.png)
 
 **Suggestion after previously checking normality**
-![normality](experiments/chatgpt_bard_copilot/copilot_after_visualization.png)
+![normality](experiments/chatgpt_bard_copilot/copilot_after_normality_checking.png)
