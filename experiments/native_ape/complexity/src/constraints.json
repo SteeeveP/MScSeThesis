@@ -1,0 +1,214 @@
+{
+    "constraints": [
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "describe"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "corr"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "log"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "impute_mean_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "filter_sd"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "dropna_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "pivot_table_mean"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "select_col"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "column_split_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "predict"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "lineplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "countplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "normality_plots"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "heatmap"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "kdeplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "pairplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "scatterplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "barplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "jointplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "histplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "boxplot"
+                    ]
+                }
+            ]
+        }
+    ]
+}

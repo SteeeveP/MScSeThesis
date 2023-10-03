@@ -1,0 +1,511 @@
+2023-09-29 23:16:42,186 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:16:42,377 - __main__ - INFO - Instance read.
+2023-09-29 23:16:42,445 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:16:42,445 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:16:42,447 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:16:42,447 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:16:42,447 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:16:42,448 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:16:42,448 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:16:42,449 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:16:42,449 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:16:42,450 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:16:42,450 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:16:42,452 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:16:42,536 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:16:42,537 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:16:42,537 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:16:42,538 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:16:42,538 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:16:46,034 - __main__ - DEBUG - Solver init time: 3.50s
+2023-09-29 23:16:46,901 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:16:46,901 - __main__ - INFO - Solver finished.
+2023-09-29 23:17:01,123 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:17:01,319 - __main__ - INFO - Instance read.
+2023-09-29 23:17:01,389 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:17:01,389 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:17:01,392 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:17:01,392 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:17:01,393 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:17:01,395 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:17:01,395 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:17:01,396 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:17:01,396 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:17:01,397 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:17:01,398 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:17:01,401 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:17:01,487 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:17:01,487 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:17:01,488 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:17:01,489 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:17:01,489 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:17:05,100 - __main__ - DEBUG - Solver init time: 3.61s
+2023-09-29 23:17:05,985 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:17:05,985 - __main__ - INFO - Solver finished.
+2023-09-29 23:17:18,700 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:17:18,886 - __main__ - INFO - Instance read.
+2023-09-29 23:17:18,954 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:17:18,955 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:17:18,956 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:17:18,956 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:17:18,956 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:17:18,957 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:17:18,957 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:17:18,958 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:17:18,958 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:17:18,958 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:17:18,959 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:17:18,962 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:17:19,045 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:17:19,046 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:17:19,047 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:17:19,047 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:17:19,047 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:17:22,541 - __main__ - DEBUG - Solver init time: 3.49s
+2023-09-29 23:17:23,283 - __main__ - INFO - Step 7, Models 0
+2023-09-29 23:17:24,126 - __main__ - INFO - Step 8, Models 0
+2023-09-29 23:17:25,077 - __main__ - INFO - Step 9, Models 0
+2023-09-29 23:17:26,149 - __main__ - INFO - Step 10, Models 0
+2023-09-29 23:17:27,313 - __main__ - INFO - Step 11, Models 0
+2023-09-29 23:17:27,313 - __main__ - INFO - Solver finished.
+2023-09-29 23:17:27,313 - __main__ - ERROR - Expected 5 solutions, got 0
+Traceback (most recent call last):
+  File "/Users/stevep/Documents/code/APE_thesis/ape_asp/temp/run_ape_housing.py", line 243, in main
+    assert len(inc_solver_inst.models) == config.solutions, f"Expected {config.solutions} solutions, got {len(inc_solver_inst.models)}"
+AssertionError: Expected 5 solutions, got 0
+2023-09-29 23:17:59,544 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:17:59,733 - __main__ - INFO - Instance read.
+2023-09-29 23:17:59,804 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:17:59,805 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:17:59,806 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:17:59,806 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:17:59,806 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:17:59,808 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:17:59,808 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:17:59,808 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:17:59,808 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:17:59,809 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:17:59,809 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:17:59,812 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:17:59,894 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:17:59,895 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:17:59,896 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:17:59,896 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:17:59,896 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:18:03,349 - __main__ - DEBUG - Solver init time: 3.45s
+2023-09-29 23:18:04,196 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:18:04,196 - __main__ - INFO - Solver finished.
+2023-09-29 23:18:19,990 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:18:20,183 - __main__ - INFO - Instance read.
+2023-09-29 23:18:20,252 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:18:20,253 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:18:20,254 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:18:20,254 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:18:20,255 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:18:20,256 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:18:20,256 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:18:20,256 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:18:20,257 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:18:20,257 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:18:20,258 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:18:20,260 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:18:20,343 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:18:20,344 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:18:20,344 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:18:20,345 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:18:20,345 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:18:23,996 - __main__ - DEBUG - Solver init time: 3.65s
+2023-09-29 23:18:24,819 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:18:24,819 - __main__ - INFO - Solver finished.
+2023-09-29 23:18:34,538 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:18:34,727 - __main__ - INFO - Instance read.
+2023-09-29 23:18:34,796 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:18:34,797 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:18:34,798 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:18:34,798 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:18:34,798 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:18:34,799 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:18:34,800 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:18:34,800 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:18:34,800 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:18:34,801 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:18:34,801 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:18:34,804 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:18:34,885 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:18:34,886 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:18:34,886 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:18:34,887 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:18:34,887 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:18:38,507 - __main__ - DEBUG - Solver init time: 3.62s
+2023-09-29 23:18:39,389 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:18:39,389 - __main__ - INFO - Solver finished.
+2023-09-29 23:22:28,567 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:22:28,763 - __main__ - INFO - Instance read.
+2023-09-29 23:22:28,832 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:22:28,836 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:22:28,840 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:22:28,841 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:22:28,842 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:22:28,843 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:22:28,844 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:22:28,844 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:22:28,845 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:22:28,846 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:22:28,846 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:22:28,849 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:22:28,934 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:22:28,935 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:22:28,936 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:22:28,936 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:22:28,936 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:22:32,540 - __main__ - DEBUG - Solver init time: 3.60s
+2023-09-29 23:22:33,414 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:22:33,414 - __main__ - INFO - Solver finished.
+2023-09-29 23:26:40,010 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:26:40,201 - __main__ - INFO - Instance read.
+2023-09-29 23:26:40,271 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:26:40,275 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:26:40,278 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:26:40,279 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:26:40,279 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:26:40,281 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:26:40,281 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:26:40,282 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:26:40,282 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:26:40,283 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:26:40,283 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:26:40,286 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:26:40,368 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:26:40,369 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:26:40,370 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:26:40,371 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:26:40,371 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:26:43,982 - __main__ - DEBUG - Solver init time: 3.61s
+2023-09-29 23:26:44,944 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:26:44,944 - __main__ - INFO - Solver finished.
+2023-09-29 23:31:50,181 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:31:50,375 - __main__ - INFO - Instance read.
+2023-09-29 23:31:50,442 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:31:50,448 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:31:50,452 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:31:50,453 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:31:50,453 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:31:50,455 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:31:50,455 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:31:50,456 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:31:50,456 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:31:50,457 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:31:50,458 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:31:50,460 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:31:50,543 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:31:50,543 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:31:50,544 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:31:50,545 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:31:50,545 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:31:54,103 - __main__ - DEBUG - Solver init time: 3.56s
+2023-09-29 23:31:54,877 - __main__ - INFO - Step 7, Models 0
+2023-09-29 23:31:55,714 - __main__ - INFO - Step 8, Models 0
+2023-09-29 23:31:56,694 - __main__ - INFO - Step 9, Models 0
+2023-09-29 23:31:57,823 - __main__ - INFO - Step 10, Models 0
+2023-09-29 23:31:59,067 - __main__ - INFO - Step 11, Models 0
+2023-09-29 23:31:59,067 - __main__ - INFO - Solver finished.
+2023-09-29 23:31:59,067 - __main__ - ERROR - Expected 5 solutions, got 0
+Traceback (most recent call last):
+  File "/Users/stevep/Documents/code/APE_thesis/ape_asp/temp/run_ape_housing.py", line 243, in main
+    assert len(inc_solver_inst.models) == config.solutions, f"Expected {config.solutions} solutions, got {len(inc_solver_inst.models)}"
+AssertionError: Expected 5 solutions, got 0
+2023-09-29 23:34:31,266 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:34:31,467 - __main__ - INFO - Instance read.
+2023-09-29 23:34:31,541 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:34:31,570 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:34:31,582 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:34:31,583 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:34:31,583 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:34:31,585 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:34:31,586 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:34:31,586 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:34:31,587 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:34:31,588 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:34:31,588 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:34:31,591 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:34:31,679 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:34:31,680 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:34:31,681 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:34:31,682 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:34:31,682 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:34:31,781 - __main__ - DEBUG - Solver init time: 0.10s
+2023-09-29 23:34:31,783 - __main__ - INFO - Step 7, Models 0
+2023-09-29 23:34:31,786 - __main__ - INFO - Step 8, Models 0
+2023-09-29 23:34:31,786 - __main__ - INFO - Step 9, Models 0
+2023-09-29 23:34:31,787 - __main__ - INFO - Step 10, Models 0
+2023-09-29 23:34:31,787 - __main__ - INFO - Step 11, Models 0
+2023-09-29 23:34:31,787 - __main__ - INFO - Solver finished.
+2023-09-29 23:34:31,787 - __main__ - ERROR - Expected 5 solutions, got 0
+Traceback (most recent call last):
+  File "/Users/stevep/Documents/code/APE_thesis/ape_asp/temp/run_ape_housing.py", line 243, in main
+    assert len(inc_solver_inst.models) == config.solutions, f"Expected {config.solutions} solutions, got {len(inc_solver_inst.models)}"
+AssertionError: Expected 5 solutions, got 0
+2023-09-29 23:37:55,777 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:37:55,976 - __main__ - INFO - Instance read.
+2023-09-29 23:37:56,047 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:37:56,050 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:37:56,053 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:37:56,053 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:37:56,054 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:37:56,056 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:37:56,056 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:37:56,056 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:37:56,057 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:37:56,057 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:37:56,058 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:37:56,061 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:37:56,144 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:37:56,145 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:37:56,146 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:37:56,146 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:37:56,147 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:38:00,093 - __main__ - DEBUG - Solver init time: 3.95s
+2023-09-29 23:38:01,083 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:38:01,083 - __main__ - INFO - Solver finished.
+2023-09-29 23:38:37,617 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:38:37,805 - __main__ - INFO - Instance read.
+2023-09-29 23:38:37,875 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:38:37,875 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:38:37,876 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:38:37,877 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:38:37,877 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:38:37,878 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:38:37,878 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:38:37,878 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:38:37,879 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:38:37,879 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:38:37,880 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:38:37,882 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:38:37,965 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:38:37,966 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:38:37,966 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:38:37,967 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:38:37,967 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:38:41,481 - __main__ - DEBUG - Solver init time: 3.51s
+2023-09-29 23:38:42,416 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:38:42,416 - __main__ - INFO - Solver finished.
+2023-09-29 23:41:56,758 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:41:56,949 - __main__ - INFO - Instance read.
+2023-09-29 23:41:57,017 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:41:57,018 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:41:57,019 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:41:57,019 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:41:57,019 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:41:57,020 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:41:57,020 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:41:57,021 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:41:57,021 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:41:57,022 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:41:57,022 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:41:57,024 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:41:57,107 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:41:57,107 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:41:57,108 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:41:57,108 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:41:57,108 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:42:00,748 - __main__ - DEBUG - Solver init time: 3.64s
+2023-09-29 23:42:01,884 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:42:01,884 - __main__ - INFO - Solver finished.
+2023-09-29 23:42:17,581 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-29 23:42:17,779 - __main__ - INFO - Instance read.
+2023-09-29 23:42:19,060 - __main__ - INFO - Instance written to asp.
+2023-09-29 23:42:19,061 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-29 23:42:19,062 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-29 23:42:19,062 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-29 23:42:19,063 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-29 23:42:19,064 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-29 23:42:19,065 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-29 23:42:19,065 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-29 23:42:19,065 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-29 23:42:19,066 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-29 23:42:19,067 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-29 23:42:19,069 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-29 23:42:19,153 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-29 23:42:19,153 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-29 23:42:19,154 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-29 23:42:19,155 - __main__ - DEBUG - Solver instance loaded.
+2023-09-29 23:42:19,155 - __main__ - INFO - Starting validation run solver.
+2023-09-29 23:42:22,819 - __main__ - DEBUG - Solver init time: 3.66s
+2023-09-29 23:42:24,089 - __main__ - INFO - Step 7, Models 5
+2023-09-29 23:42:24,090 - __main__ - INFO - Solver finished.
+2023-09-30 01:17:48,983 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-30 01:17:49,183 - __main__ - INFO - Instance read.
+2023-09-30 01:17:50,338 - __main__ - INFO - Instance written to asp.
+2023-09-30 01:17:50,341 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-30 01:17:50,345 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-30 01:17:50,345 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-30 01:17:50,346 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-30 01:17:50,347 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-30 01:17:50,348 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-30 01:17:50,348 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-30 01:17:50,349 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-30 01:17:50,349 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-30 01:17:50,350 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-30 01:17:50,352 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-30 01:17:50,435 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-30 01:17:50,435 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-30 01:17:50,436 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-30 01:17:50,437 - __main__ - DEBUG - Solver instance loaded.
+2023-09-30 01:17:50,437 - __main__ - INFO - Starting validation run solver.
+2023-09-30 01:17:54,182 - __main__ - DEBUG - Solver init time: 3.75s
+2023-09-30 01:17:56,814 - __main__ - INFO - Step 7, Models 5
+2023-09-30 01:17:56,814 - __main__ - INFO - Solver finished.
+2023-09-30 01:23:15,658 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-30 01:23:15,852 - __main__ - INFO - Instance read.
+2023-09-30 01:23:17,001 - __main__ - INFO - Instance written to asp.
+2023-09-30 01:23:17,005 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-30 01:23:17,009 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-30 01:23:17,009 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-30 01:23:17,010 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-30 01:23:17,011 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-30 01:23:17,011 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-30 01:23:17,012 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-30 01:23:17,012 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-30 01:23:17,013 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-30 01:23:17,013 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-30 01:23:17,016 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-30 01:23:17,099 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-30 01:23:17,100 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-30 01:23:17,101 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-30 01:23:17,102 - __main__ - DEBUG - Solver instance loaded.
+2023-09-30 01:23:17,102 - __main__ - INFO - Starting validation run solver.
+2023-09-30 01:23:20,733 - __main__ - DEBUG - Solver init time: 3.63s
+2023-09-30 01:23:21,942 - __main__ - INFO - Step 7, Models 5
+2023-09-30 01:23:21,942 - __main__ - INFO - Solver finished.
+2023-09-30 01:28:27,822 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-30 01:28:28,010 - __main__ - INFO - Instance read.
+2023-09-30 01:28:29,182 - __main__ - INFO - Instance written to asp.
+2023-09-30 01:28:29,182 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-30 01:28:29,184 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-30 01:28:29,184 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-30 01:28:29,185 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-30 01:28:29,186 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-30 01:28:29,187 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-30 01:28:29,187 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-30 01:28:29,188 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-30 01:28:29,188 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-30 01:28:29,189 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-30 01:28:29,191 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-30 01:28:29,274 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-30 01:28:29,275 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-30 01:28:29,276 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-30 01:28:29,277 - __main__ - DEBUG - Solver instance loaded.
+2023-09-30 01:28:29,277 - __main__ - INFO - Starting validation run solver.
+2023-09-30 01:28:33,073 - __main__ - DEBUG - Solver init time: 3.80s
+2023-09-30 01:28:35,405 - __main__ - INFO - Step 7, Models 5
+2023-09-30 01:28:35,405 - __main__ - INFO - Solver finished.
+2023-09-30 01:32:37,717 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-30 01:32:37,911 - __main__ - INFO - Instance read.
+2023-09-30 01:32:39,094 - __main__ - INFO - Instance written to asp.
+2023-09-30 01:32:39,094 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-30 01:32:39,096 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-30 01:32:39,096 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-30 01:32:39,097 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-30 01:32:39,098 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-30 01:32:39,099 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-30 01:32:39,099 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-30 01:32:39,100 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-30 01:32:39,100 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-30 01:32:39,101 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-30 01:32:39,103 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-30 01:32:39,185 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-30 01:32:39,186 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-30 01:32:39,186 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-30 01:32:39,187 - __main__ - DEBUG - Solver instance loaded.
+2023-09-30 01:32:39,187 - __main__ - INFO - Starting validation run solver.
+2023-09-30 01:32:43,082 - __main__ - DEBUG - Solver init time: 3.89s
+2023-09-30 01:32:44,489 - __main__ - INFO - Step 7, Models 5
+2023-09-30 01:32:44,491 - __main__ - INFO - Solver finished.
+2023-09-30 01:36:03,516 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-30 01:36:03,706 - __main__ - INFO - Instance read.
+2023-09-30 01:36:04,861 - __main__ - INFO - Instance written to asp.
+2023-09-30 01:36:04,861 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-30 01:36:04,862 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-30 01:36:04,863 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-30 01:36:04,863 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-30 01:36:04,864 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-30 01:36:04,864 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-30 01:36:04,864 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-30 01:36:04,865 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-30 01:36:04,865 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-30 01:36:04,866 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-30 01:36:04,868 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-30 01:36:04,953 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-30 01:36:04,953 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-30 01:36:04,954 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-30 01:36:04,954 - __main__ - DEBUG - Solver instance loaded.
+2023-09-30 01:36:04,954 - __main__ - INFO - Starting validation run solver.
+2023-09-30 01:36:08,568 - __main__ - DEBUG - Solver init time: 3.61s
+2023-09-30 01:36:10,767 - __main__ - INFO - Step 7, Models 5
+2023-09-30 01:36:10,767 - __main__ - INFO - Solver finished.
+2023-09-30 05:26:41,901 - __main__ - DEBUG - args: Namespace(iteration_number=2, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-09-30 05:26:42,095 - __main__ - INFO - Instance read.
+2023-09-30 05:26:43,243 - __main__ - INFO - Instance written to asp.
+2023-09-30 05:26:43,246 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-09-30 05:26:43,250 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-09-30 05:26:43,250 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-09-30 05:26:43,251 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-09-30 05:26:43,252 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-09-30 05:26:43,253 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-09-30 05:26:43,253 - __main__ - DEBUG - Loading encoding: io.lp
+2023-09-30 05:26:43,254 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-09-30 05:26:43,254 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-09-30 05:26:43,255 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-09-30 05:26:43,257 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-09-30 05:26:43,340 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-09-30 05:26:43,341 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-09-30 05:26:43,342 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-09-30 05:26:43,344 - __main__ - DEBUG - Solver instance loaded.
+2023-09-30 05:26:43,344 - __main__ - INFO - Starting validation run solver.
+2023-09-30 05:26:47,074 - __main__ - DEBUG - Solver init time: 3.73s
+2023-09-30 05:26:49,651 - __main__ - INFO - Step 7, Models 5
+2023-09-30 05:26:49,652 - __main__ - INFO - Solver finished.
+2023-10-01 03:40:30,591 - __main__ - DEBUG - args: Namespace(iteration_number=3, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-10-01 03:40:30,790 - __main__ - INFO - Instance read.
+2023-10-01 03:40:31,969 - __main__ - INFO - Instance written to asp.
+2023-10-01 03:40:31,973 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-10-01 03:40:31,977 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-10-01 03:40:31,978 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-10-01 03:40:31,979 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-10-01 03:40:31,980 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-10-01 03:40:31,981 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-10-01 03:40:31,982 - __main__ - DEBUG - Loading encoding: io.lp
+2023-10-01 03:40:31,982 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-10-01 03:40:31,983 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-10-01 03:40:31,984 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-10-01 03:40:31,987 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-10-01 03:40:32,071 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-10-01 03:40:32,072 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-10-01 03:40:32,073 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-10-01 03:40:32,074 - __main__ - DEBUG - Solver instance loaded.
+2023-10-01 03:40:32,074 - __main__ - INFO - Starting validation run solver.
+2023-10-01 03:40:34,025 - __main__ - DEBUG - Solver init time: 1.95s
+2023-10-01 03:40:34,398 - __main__ - INFO - Step 4, Models 5
+2023-10-01 03:40:34,398 - __main__ - INFO - Solver finished.
+2023-10-01 03:41:33,331 - __main__ - DEBUG - args: Namespace(iteration_number=4, output=True, solutions=5, use_domain_asp=True, runs=0, validate=True)
+2023-10-01 03:41:33,523 - __main__ - INFO - Instance read.
+2023-10-01 03:41:34,672 - __main__ - INFO - Instance written to asp.
+2023-10-01 03:41:34,676 - __main__ - DEBUG - Loading encoding: aux.lp
+2023-10-01 03:41:34,680 - __main__ - DEBUG - Loading encoding: bind_n.lp
+2023-10-01 03:41:34,681 - __main__ - DEBUG - Loading encoding: conf_n.lp
+2023-10-01 03:41:34,681 - __main__ - DEBUG - Loading encoding: constraints.lp
+2023-10-01 03:41:34,683 - __main__ - DEBUG - Loading encoding: goal.lp
+2023-10-01 03:41:34,683 - __main__ - DEBUG - Loading encoding: in_out_n.lp
+2023-10-01 03:41:34,683 - __main__ - DEBUG - Loading encoding: io.lp
+2023-10-01 03:41:34,684 - __main__ - DEBUG - Loading encoding: tax_t_op_n.lp
+2023-10-01 03:41:34,685 - __main__ - DEBUG - Loading encoding: workflow.lp
+2023-10-01 03:41:34,686 - __main__ - DEBUG - Loading encoding: ontology.lp
+2023-10-01 03:41:34,688 - __main__ - DEBUG - Loading encoding: tools.lp
+2023-10-01 03:41:34,772 - __main__ - DEBUG - Loading encoding: cst.lp
+2023-10-01 03:41:34,773 - __main__ - DEBUG - Loading encoding: wf_io.lp
+2023-10-01 03:41:34,773 - __main__ - DEBUG - Loading encoding: domain_heuristics.lp
+2023-10-01 03:41:34,775 - __main__ - DEBUG - Solver instance loaded.
+2023-10-01 03:41:34,775 - __main__ - INFO - Starting validation run solver.
+2023-10-01 03:41:36,385 - __main__ - DEBUG - Solver init time: 1.61s
+2023-10-01 03:41:36,627 - __main__ - INFO - Step 3, Models 5
+2023-10-01 03:41:36,627 - __main__ - INFO - Solver finished.

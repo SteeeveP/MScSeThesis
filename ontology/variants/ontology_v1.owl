@@ -1,0 +1,907 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.co-ode.org/ontologies/ont.owl#"
+     xml:base="http://www.co-ode.org/ontologies/ont.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.co-ode.org/ontologies/ont.owl"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TypesTaxonomy"/>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DataClass">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TypesTaxonomy"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DataState">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TypesTaxonomy"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StatisticalRelevance">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TypesTaxonomy"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DataSetIndex">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TypesTaxonomy"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SklearnObject">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataClass"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BasicObject">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataClass"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PandasObject">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataClass"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MatplotlibObject">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataClass"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NumpyObject">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataClass"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Estimator">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SklearnObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Transformer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SklearnObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SL">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Estimator"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#USL">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Estimator"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NearestNeighbors">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Estimator"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SearchCV">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Estimator"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Classifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Regressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearModel">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Tree">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SVM">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Ensemble">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DummyEstimator">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KernelRidgeRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PerceptronClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LogisticRegressionClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PerceptronClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#LinearModel"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LogisticRegressionClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#LinearModel"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ElasticNetRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RidgeRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#LinearModel"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ElasticNetRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#LinearModel"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RidgeRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#LinearModel"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Regression">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tree"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DecisionTreeClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DecisionTreeClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tree"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DecisionTreeRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regression"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearSVClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearSVClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SVM"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearSVRregressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#LinearSVRregressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SVM"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RandomForestClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AdaBoostClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VotingClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RandomForestClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ensemble"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AdaBoostClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ensemble"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VotingClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ensemble"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RandomForestRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AdaBoostRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VotingRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#RandomForestRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ensemble"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#AdaBoostRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ensemble"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#VotingRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ensemble"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DummyClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DummyClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DummyEstimator"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DummyRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DummyRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DummyEstimator"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Clustor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#USL"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KMeansClustor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Clustor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DBScanClustor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Clustor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KNeighborsClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Classifier"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KNeighborsClassifier">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NearestNeighbors"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KNeighborsRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Regressor"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KNeighborsRegressor">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NearestNeighbors"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GridSearchCV">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SearchCV"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#HalvingGridSearchCV">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#SearchCV"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Imputer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Transformer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DecompositionTransformer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Transformer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#SimpleImputer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Imputer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IterativeImputer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Imputer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#KNNImputer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Imputer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#CatKNNImputer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Imputer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PCA">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DecompositionTransformer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TrunctuatedSVD">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DecompositionTransformer"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Str">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#BasicObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Number">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#BasicObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DateTime">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#BasicObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Bool">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Number"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Int">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Number"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Float">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Number"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Series">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PandasObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PandasObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StrSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Series"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NumberSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Series"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DateTimeSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Series"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DescribeSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Series"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MixedSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Series"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BoolSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumberSeries"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IntSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumberSeries"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloatSeries">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumberSeries"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DescribeDataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ClassificationReport">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MixedDataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NumberDataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BoolDataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumberDataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IntDataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumberDataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloatDataFrame">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumberDataFrame"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Axes">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MatplotlibObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Figure">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MatplotlibObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FlatArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumpyObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NDArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumpyObject"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StrFlatArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FlatArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IntFlatArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FlatArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloatFlatArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FlatArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BoolArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FlatArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DateTimeArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#FlatArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StrNDArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NDArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IntNDArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NDArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#FloatNDArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NDArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BoolNDArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NDArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DateTimeNDArray">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NDArray"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NonModified">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataState"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Scaled">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataState"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Fitted">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataState"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Vectorized">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataState"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NoState">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataState"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ZScoreScaled">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Scaled"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MinMaxScaled">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Scaled"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MeanCentered">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Scaled"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IndependentVariable">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StatisticalRelevance"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DependentVariable">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StatisticalRelevance"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Prediction">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StatisticalRelevance"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NoRelevance">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StatisticalRelevance"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PreTestData">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataSetIndex"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TestData">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataSetIndex"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EDA">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PreTestData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#InputData">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PreTestData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TrainingData">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PreTestData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Corr">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDA"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ToolsTaxonomy"/>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tool"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Plotting">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tool"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Modeling">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Tool"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MissingData">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Outliers">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ReshapingSorting">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TableManipulation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EDAFeatureEngineering"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#StringOperation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#strip">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#StringOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#describe">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#value_counts">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#mean">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#med">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#skew">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#kurt">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#corr">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#k_most_corr_indep_var_corr_matrix">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#5_most_corr_indep_var_corr_matrix">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#k_most_corr_indep_var_corr_matrix"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TypeConversion">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MissingData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#IndexOperation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MissingData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#isna">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TypeConversion"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#notna">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TypeConversion"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#interpolate_groupby_k_most_corr_median">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Interpolate">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#interpolate_groupby_k_most_corr_median">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MissingData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Interpolate">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MissingData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#interpolate_groupby_3_most_corr_median">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#interpolate_groupby_k_most_corr_median"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#linear_interpolate">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Interpolate"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#na_count">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#na_count_percentage">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableSummaryStatistics"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#na_count">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MissingData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#na_count_percentage">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MissingData"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#dropna">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IndexOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#filter_SD">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IndexOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#drop_SD">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IndexOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#filter_SD">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Outliers"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#drop_SD">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Outliers"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#pivot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReshapingSorting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#pivot_table_mean">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReshapingSorting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#drop_duplicates">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#IndexOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#drop_duplicates">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ReshapingSorting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Normalization">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#TransformerOperation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#NumericNorm">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Normalization"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#num_center_mean">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumericNorm"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#num_min_max_norm">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumericNorm"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#num_z_score">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#NumericNorm"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#center_mean">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#min_max_norm">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#z_score">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#center_mean">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Normalization"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#min_max_norm">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Normalization"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#z_score">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Normalization"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#log1p">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#log">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#boxcox">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ColumnOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#log1p">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#log">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#boxcox">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TableManipulation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#fit_transformer">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TransformerOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#transform">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TransformerOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#fit_transform">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#TransformerOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#MultiPlotGrid">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Plotting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Relationship">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Plotting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Distribution">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Plotting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Trends">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Plotting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#plot_tree">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Plotting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#PairGrid">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#MultiPlotGrid"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#pairplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#PairGrid"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#scatterplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Relationship"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#swarmplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Relationship"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#heatmap">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Relationship"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#barplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Relationship"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#k_most_corr_indep_var_corr_matrix_heatmap">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Relationship"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#jointplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Distribution"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#kdeplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Distribution"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#histplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Distribution"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#countplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Distribution"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#boxplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Distribution"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#lineplot">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Trends"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#EstimatorOperation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Modeling"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ModelSelection">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Modeling"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#fit_estimator">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EstimatorOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#predict">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#EstimatorOperation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#DataSplitting">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ModelSelection"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ModelValidation">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ModelSelection"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#train_test_split">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#DataSplitting"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#cross_val_score">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ModelValidation"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#classification_report">
+		<rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ModelValidation"/>
+	</owl:Class>
+
+</rdf:RDF>

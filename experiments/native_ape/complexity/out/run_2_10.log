@@ -1,0 +1,64 @@
+
+-------------------------------------------------------------
+	Workflow discovery - length 1
+-------------------------------------------------------------
+Total problem setup time: 35.379 sec (1152889 clauses).
+Found 0 solutions. Solving time: 0.026 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 2
+-------------------------------------------------------------
+Total problem setup time: 37.464 sec (2331996 clauses).
+Found 0 solutions. Solving time: 0.06 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 3
+-------------------------------------------------------------
+Total problem setup time: 39.56 sec (3644007 clauses).
+Found 0 solutions. Solving time: 0.127 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 4
+-------------------------------------------------------------
+Total problem setup time: 45.58 sec (5124753 clauses).
+Found 0 solutions. Solving time: 0.36 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 5
+-------------------------------------------------------------
+Total problem setup time: 55.084 sec (6810237 clauses).
+Found 0 solutions. Solving time: 0.307 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 6
+-------------------------------------------------------------
+Total problem setup time: 54.656 sec (8735951 clauses).
+Found 0 solutions. Solving time: 1.324 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 7
+-------------------------------------------------------------
+Total problem setup time: 57.836 sec (10938245 clauses).
+Found 0 solutions. Solving time: 2.074 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 8
+-------------------------------------------------------------
+Total problem setup time: 66.948 sec (13452717 clauses).
+Found 0 solutions. Solving time: 11.947 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 9
+-------------------------------------------------------------
+Total problem setup time: 75.336 sec (16315053 clauses).
+Found 0 solutions. Solving time: 31.007 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 10
+-------------------------------------------------------------
+Total problem setup time: 85.901 sec (19561274 clauses).
+Found 0 solutions. Solving time: 565.709 sec.
+
+-------------------------------------------------------------
+	Workflow discovery - length 11
+-------------------------------------------------------------

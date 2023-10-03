@@ -1,0 +1,214 @@
+{
+    "constraints": [
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "extract_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Name"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "extract_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        " ([A-Za-z]+)\\."
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Name"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Lady|Countess|Capt|Col|Don|Dr|Major|Rev|Sir|Jonkheer|Dona"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Rare"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "bin_nominal_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Age"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "bin_nominal_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "bin_nominal_q_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Fare"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "bin_nominal_q_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "impute_median_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Age"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "impute_mode_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Embarked"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "one_hot_encode_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "Name"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "itn_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Encoding"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "EDAFeatureEngineering"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "depend_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "extract_i"
+                    ]
+                }
+            ]
+        }
+    ]
+}

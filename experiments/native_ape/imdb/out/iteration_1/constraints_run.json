@@ -1,0 +1,209 @@
+{
+    "constraints": [
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "get_text_from_html_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "next_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "get_text_from_html_i"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "expand_abbr_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "expand_abbr_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "abrev.json"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "expand_abbr_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "next_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "expand_abbr_i"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "[^a-zA-Z]"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        " "
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "next_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "replace_re_i"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "lemmatize_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "lemmatize_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "next_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "lemmatize_i"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "remove_stopwords_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "remove_stopwords_i"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "last_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "plot_wordcloud"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "plot_wordcloud"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,272 @@
+{
+    "constraints": [
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "scatterplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "scatterplot"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "scatterplot"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "IndependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                },
+                {
+                    "DataClass": [
+                        "StrColumn"
+                    ],
+                    "StatisticalRelevance": [
+                        "IndependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "set_figure_size"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "set_figure_size"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "9"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "set_figure_size"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "16"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "set_figure_size"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "rotate_x_labels"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "rotate_x_labels"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "k_most_corr_indep_var_corr_matrix"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "k_most_corr_indep_var_corr_matrix"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "k_most_corr_indep_var_corr_matrix"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "10"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "heatmap"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "k_most_corr_indep_var_corr_matrix"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "heatmap"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "pairplot"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "pairplot"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "pairplot"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "10"
+                    ]
+                }
+            ]
+        }
+    ]
+}

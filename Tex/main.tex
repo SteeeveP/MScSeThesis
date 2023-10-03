@@ -1,0 +1,239 @@
+% !TEX options=--shell-escape
+
+\documentclass[12pt,twoside]{book}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{calc}
+\usepackage{float}
+\usepackage[outputdir=../]{minted}
+\usepackage{import}  % nested include
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{emptypage}  % leere seiten bei \cleardoublepage
+\usepackage{subcaption}  % subfigures
+\usepackage{stmaryrd}
+\usepackage[utf8]{inputenc}
+\usepackage[nameinlink]{cleveref}
+\usepackage[inkscapeformat=png]{svg}
+\usepackage{svg}
+\usepackage{xargs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{makecell}
+
+\usepackage[
+	a4paper,
+	width=150mm,
+	top=25mm,
+	bottom=25mm,
+	bindingoffset=6mm,
+	headheight=15pt,
+]{geometry}
+
+% \usepackage[disable]{todonotes}
+% \usepackage{todonotes}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+
+\setlength{\marginparwidth}{3cm}
+
+\usepackage{fancyhdr}
+\pagestyle{empty}
+
+\fancypagestyle{mainmatter}{
+	\fancyhf{}
+	\fancyhead[ER,OL]{APE in Data Science}
+	\fancyhead[EL,OR]{\leftmark}
+	\fancyfoot[EL,OR]{\thepage}
+	\fancyfoot[ER,OL]{Steven Pan}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyfoot[EL,OR]{\thepage}
+	\fancyfoot[ER,OL]{Steven Pan}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\usepackage[maxbibnames=5]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+
+% \usepackage{listings}
+% \input{prolog-style}
+
+\usepackage[nolist]{acronym}
+
+\newcommand\jsonkey{\color{purple}}
+\newcommand\jsonvalue{\color{cyan}}
+\newcommand\jsonnumber{\color{orange}}
+
+% switch used as state variable
+\makeatletter
+\newif\ifisvalue@json
+
+\lstdefinelanguage{json}{
+    tabsize             = 2,
+    showstringspaces    = false,
+    keywords            = {false,true},
+    alsoletter          = 0123456789.,
+    morestring          = [s]{"}{"},
+    stringstyle         = \jsonkey\ifisvalue@json\jsonvalue\fi,
+    MoreSelectCharTable = \lst@DefSaveDef{`:}\colon@json{\enterMode@json},
+    MoreSelectCharTable = \lst@DefSaveDef{`,}\comma@json{\exitMode@json{\comma@json}},
+    MoreSelectCharTable = \lst@DefSaveDef{`\{}\bracket@json{\exitMode@json{\bracket@json}},
+    basicstyle          = \ttfamily
+}
+
+% enter "value" mode after encountering a colon
+\newcommand\enterMode@json{%
+    \colon@json%
+    \ifnum\lst@mode=\lst@Pmode%
+        \global\isvalue@jsontrue%
+    \fi
+}
+
+% leave "value" mode: either we hit a comma, or the value is a nested object
+\newcommand\exitMode@json[1]{#1\global\isvalue@jsonfalse}
+
+\lst@AddToHook{Output}{%
+    \ifisvalue@json%
+        \ifnum\lst@mode=\lst@Pmode%
+            \def\lst@thestyle{\jsonnumber}%
+        \fi
+    \fi
+    %override by keyword style if a keyword is detected!
+    \lsthk@DetectKeywords% 
+}
+
+\newcommand\resetJsonFlag{%
+  \global\isvalue@jsonfalse%
+}
+
+\lstdefinelanguage{Prolog}{
+  morekeywords={is,init,define,if,else,while,do,return,not},
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]{\%},
+  morestring=[b]",
+  morestring=[d]',
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  showstringspaces=false,
+  breaklines=true
+}
+
+\usepackage{newfloat}
+\DeclareFloatingEnvironment[
+    fileext=loq,
+    listname={List of ChatGPT Quotes},
+    name=Quote,
+    placement=htp,
+]{chatquote}
+
+\makeatother
+
+
+\title{Automated Construction of Data Science Workflows}
+\author{Steven Pan}
+\date{October 1, 2023}
+
+\makeatletter
+\newcommand\thetitle{\@title}
+\newcommand\subtitle{Development and Evaluation of an APE Data Science Ontology}
+\newcommand\theauthor{\@author}
+\newcommand\thedate{\@date}
+\makeatother
+
+\newcommand{\encoding}[2]{\textsc{#1\textsubscript{#2}}}
+
+
+\begin{document}
+
+\frontmatter
+\subimport{./}{titlepage}
+\cleardoublepage
+
+% \listoftodos
+% \newpage
+
+\subimport{./}{abstract}
+\cleardoublepage
+
+% \chapter*{Dedication}
+% \begin{flushright}
+% % stretch: 1:2 ration of top and bottom space
+% \null\vspace{\stretch{1}}
+% For god and Jesus Christ
+% \vspace{\stretch{2}}\null
+% \end{flushright}
+
+\chapter*{Declaration of Originality}
+I hereby declare that this thesis is the product of my own work. All the assistance received in preparing this thesis and the sources used have been acknowledged.
+
+\bigskip
+\noindent
+Hiermit erkläre ich, dass ich diese Arbeit selbstständig verfasst und keine anderen als die von mir angegebenen Hilfsmittel genutzt habe.
+
+\bigskip
+\noindent
+\thedate
+
+% \chapter*{Acknowledgments}
+% Thanks
+
+% \listoftodos[Notes]
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+
+\mainmatter
+\pagestyle{mainmatter}
+
+\chapter{Introduction}
+\subimport{chapters/}{introduction.tex}
+
+\chapter{Background}\label{ch:background}
+\subimport{chapters/}{background.tex}
+
+\chapter{Related Work}\label{ch:related}
+\subimport{chapters/}{related.tex}
+
+\chapter{Data Science Domain}\label{ch:ds_ontoloty}
+\subimport{chapters/}{ds_ontology.tex}
+
+\chapter{Native APE in Data Science}\label{ch:native_ape}
+\subimport{chapters/}{native_ape.tex}
+
+\chapter{Evaluation}\label{ch:evaluation}
+\subimport{chapters/}{evaluation.tex}
+
+\chapter{Conclusion}\label{ch:conclusion}
+\subimport{chapters/}{conclusion.tex}
+
+% \appendix\label{ch:appendix}
+\subimport{./}{acronyms.tex}
+% \subimport{chapters/}{appendix.tex}
+
+\backmatter
+\printbibliography[heading=bibintoc]
+
+\end{document}

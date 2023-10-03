@@ -1,0 +1,169 @@
+{
+    "constraints": [
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "column_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "embed_text_word2vec"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "depend_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "embed_text_word2vec"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "embed_text_word2vec"
+                    ]
+                },
+                {
+                    "APE_label": [
+                        "review"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "embed_text_word2vec"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "fit_estimator"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "fit_estimator"
+                    ]
+                },
+                {
+                    "DataClass": [
+                        "Classifier"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "embed_text_word2vec"
+                    ]
+                },
+                {
+                    "DataClass": [
+                        "Word2Vec"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "embed_text_word2vec"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "predict"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "fit_estimator"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "predict"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "classification_report"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "Prediction"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "classification_report"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,602 @@
+{
+    "ontology_path": "../../ontology/ontology_v2_DIM_3.owl",
+    "ontologyPrefixIRI": "http://www.co-ode.org/ontologies/ont.owl#",
+    "toolsTaxonomyRoot": "ToolsTaxonomy",
+    "dataDimensionsTaxonomyRoots": [
+        "DataClass",
+        "StatisticalRelevance",
+        "DataSetIndex"
+    ],
+    "tool_annotations_path": "../../ontology/tool_annotations_v2_DIM_3.json",
+    "constraints_path": "constraints.json",
+    "solutions_dir_path": "./solutions/",
+    "solution_length": {
+        "min": 1,
+        "max": 15
+    },
+    "solutions": "1",
+    "timeout_sec": "100000",
+    "number_of_execution_scripts": "0",
+    "number_of_generated_graphs": "1",
+    "tool_seq_repeat": "true",
+    "debug_mode": "false",
+    "use_workflow_input": "ONE",
+    "use_all_generated_data": "NONE",
+    "inputs": [
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "Id"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "MSSubClass"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "LotFrontage"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "LotArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "Neighborhood"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "OverallQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "OverallCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "YearBuilt"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "YearRemodAdd"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "MasVnrArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "BsmtFinSF1"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "BsmtFinSF2"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "BsmtUnfSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "TotalBsmtSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "1stFlrSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "2ndFlrSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "LowQualFinSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "GrLivArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "BsmtFullBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "BsmtHalfBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "FullBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "HalfBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "BedroomAbvGr"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "KitchenAbvGr"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "TotRmsAbvGrd"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "Fireplaces"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "GarageYrBlt"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "GarageCars"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "GarageArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "WoodDeckSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "OpenPorchSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "EnclosedPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "3SsnPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "ScreenPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "PoolArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "MiscVal"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "MoSold"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "YrSold"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "DependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "SalePrice"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "StatisticalRelevance": [
+                "DependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "housing_train"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "DataSetIndex": [
+                "InputData"
+            ],
+            "APE_label": [
+                "housing_train"
+            ]
+        }
+    ],
+    "outputs": []
+}

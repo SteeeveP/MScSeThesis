@@ -1,0 +1,59 @@
+\section{Automated Pipeline Explorer}
+
+\acf{ape} \cite{kasalica2022synthesis} is an ontology, synthesis, and constraint-based workflow discovery framework for the automated composition of tool sequences satisfying input-output requirements. It is countering the exploding search complexity common in synthesis tools by limiting its solutions to finite linear workflows.
+
+The semantic knowledge for these is encoded in domain ontologies that contain tool and type taxonomies as well as tool annotations, providing a semantic abstraction layer from the underlying toolsets. Users may then use terms from these to describe their input, expected output, and solution constraints. The latter can be composed with natural language templates, as shown in \autoref{table:ape_rules}. \ac{ape} uses an off-the-shelf SAT solver to find valid workflows and can output executable scripts if the tool annotations contain necessary tool references.
+
+\begin{table}[ht]
+\centering
+\caption{Selection of APE's Natural Language Constraint Templates.}
+\label{table:ape_rules}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Rule ID} & \textbf{Description} \\
+\hline
+ite\_m & If we use module \${parameter\_1}, then use \${parameter\_2} subsequently. \\
+\hline
+itn\_m & If we use module \${parameter\_1}, then do not use \${parameter\_2} subsequently. \\
+\hline
+not\_repeat\_op & No operation that belongs to the subtree should be repeated over. \\
+\hline
+\end{tabularx}
+\end{table}
+
+It has been evaluated in various domains, such as geovisualization \cite{kasalica2019workflow}, bioinformatics \cite{kasalica2021ape}, and question answering \cite{kasalica2022synthesis}, and even provides a web-based GUI (graphical user interface) allowing users to visually sketch their workflows.
+
+\section{Data Science}
+Data Science is an interdisciplinary field combining concepts from statistics, computer science, and its application domain \cite{cao2017data}. It contains concepts such as advanced analytics, \ac{ml}, data mining, and \ac{nlp} \cite{sarker2021data}. As this field is relatively large, this thesis will focus on a subset defined in \autoref{ch:ds_ontoloty}. Potential workflows in data science may fall into the categories of descriptive analytics, predictive analytics, and prescriptive analytics \cite{cao2017data}. The first uses statistics and visualizations to describe the data, e.g., for reports. The second may use \ac{ml} to infer patterns and predict future outcomes. The last one uses optimization techniques and targets better decision-making.
+
+While prescriptive analytics is highly domain-specific, descriptive and predictive analytics may be applied to various fields and benefit from automated workflow construction using standard tools. From the different phases of the modeling process \cite{zhang2020data}, this thesis will focus on preprocessing, feature engineering, model training, and evaluation. Others, such as data acquisition, labeling, or model deployment, are too application-specific to be included in the workflow synthesis. Hyperparameter optimization and other modeling phases will only be included from a syntactical point of view as their automation is already extensively covered in \cite{he2021automl} approaches.
+
+\section{Answer Set Programming}
+
+\textbf{\acf{asp}} \cite{lifschitz2008answer} is a declarative programming paradigm that first appeared in 1997 with a rich modeling language and is specialized in solving NP-hard, knowledge-intensive search problems using non-monotonic reasoning \cite{Brewka2011}. The paradigm has been used to solve timetabling problems \cite{banbara2013answer}, tackle question answering \cite{mitra2016addressing}, and even received a controlled natural language (CNL) interface in \cite{guy2017peng}. Its programs often encode tasks following the general pattern of \cite{gebser2016modeling}:
+
+\begin{enumerate}
+    \item Defining the problem domain
+    \item Generating solution candidates
+    \item Defining the relevant characteristics of these candidates
+    \item Testing these properties to remove invalid solutions
+    \item Optionally optimizing the solutions regarding some defined cost metric
+    \item Displaying the relevant literals for each solution
+\end{enumerate}
+
+These answer set programs may then be combined with the problem instance and passed to a solver to search for valid solutions. The grounder-solver-combination used in this thesis is \textit{clingo} \cite{gebser2008user}. It merges the grounder \textit{gringo}, a tool translating high-level user programs into propositional logic programs, with \textit{clasp}, which finds stable models, so-called answer sets, for these problems. Some features of \textit{gringo}'s extensive input language used in this thesis are facts, rules, integrity constraints, choices, heuristics, and lastly, programs; see \autoref{code:gringo_example}.
+\resetJsonFlag
+\begin{lstlisting}[language=Prolog, caption=gringo Input Language Examples., label=code:gringo_example]
+#program check(t).
+% Facts
+a(0). a.
+% Rules
+b(X) :- a(X), not c(X), a.
+% Integrity Constraints
+:- c(X), a(X+t).
+% Choices
+{ c(X) : b(X) }.
+% Heuristic
+#heuristic c(t). [1, true]
+\end{lstlisting}
+Choices enable the generation of the search space, which can then be restricted to valid workflows using integrity constraints. Heuristics can control which solutions are found first by the solver, thus directing the search without changing the possible answer sets. The example shows a program called \texttt{check}, which is grounded with a constant \texttt{t} and directed towards solutions, where \texttt{c(t)} is true. The segmentation of programs and partial grounding and solving enables the iterative extension of the search space, increasing the workflow length only if no other valid solution is found at the current limit.

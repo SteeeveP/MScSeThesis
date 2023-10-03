@@ -1,0 +1,690 @@
+{
+    "ontology_path": "../../ontology/ontology_v2_DIM_1.owl",
+    "ontologyPrefixIRI": "http://www.co-ode.org/ontologies/ont.owl#",
+    "toolsTaxonomyRoot": "ToolsTaxonomy",
+    "dataDimensionsTaxonomyRoots": [
+        "DataClass"
+    ],
+    "tool_annotations_path": "../../ontology/tool_annotations_v2_DIM_1.json",
+    "constraints_path": "constraints.json",
+    "solutions_dir_path": "./solutions/",
+    "solution_length": {
+        "min": 1,
+        "max": 15
+    },
+    "solutions": "1",
+    "timeout_sec": "100000",
+    "number_of_execution_scripts": "0",
+    "number_of_generated_graphs": "1",
+    "tool_seq_repeat": "true",
+    "debug_mode": "false",
+    "use_workflow_input": "ONE",
+    "use_all_generated_data": "NONE",
+    "inputs": [
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "Id"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "MSSubClass"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "MSZoning"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "APE_label": [
+                "LotFrontage"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "LotArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Street"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Alley"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "LotShape"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "LandContour"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Utilities"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "LotConfig"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "LandSlope"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Neighborhood"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Condition1"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Condition2"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "BldgType"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "HouseStyle"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "OverallQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "OverallCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "YearBuilt"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "YearRemodAdd"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "RoofStyle"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "RoofMatl"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Exterior1st"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Exterior2nd"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "MasVnrType"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "APE_label": [
+                "MasVnrArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "ExterQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "ExterCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Foundation"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "BsmtQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "BsmtCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "BsmtExposure"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "BsmtFinType1"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "BsmtFinSF1"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "BsmtFinType2"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "BsmtFinSF2"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "BsmtUnfSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "TotalBsmtSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Heating"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "HeatingQC"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "CentralAir"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Electrical"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "1stFlrSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "2ndFlrSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "LowQualFinSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "GrLivArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "BsmtFullBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "BsmtHalfBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "FullBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "HalfBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "BedroomAbvGr"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "KitchenAbvGr"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "KitchenQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "TotRmsAbvGrd"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Functional"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "Fireplaces"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "FireplaceQu"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "GarageType"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "APE_label": [
+                "GarageYrBlt"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "GarageFinish"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "GarageCars"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "GarageArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "GarageQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "GarageCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "PavedDrive"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "WoodDeckSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "OpenPorchSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "EnclosedPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "3SsnPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "ScreenPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "PoolArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "PoolQC"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "Fence"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "MiscFeature"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "MiscVal"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "MoSold"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "YrSold"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "SaleType"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "APE_label": [
+                "SaleCondition"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "APE_label": [
+                "SalePrice"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "APE_label": [
+                "housing_train"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "APE_label": [
+                "housing_train"
+            ]
+        }
+    ],
+    "outputs": []
+}

@@ -1,0 +1,94 @@
+{
+    "constraints": [
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "column_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "fit_estimator"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "fit_estimator"
+                    ]
+                },
+                {
+                    "DataClass": [
+                        "Classifier"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "predict"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "classification_report"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "Prediction"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "train_test_split"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "classification_report"
+                    ]
+                }
+            ]
+        }
+    ]
+}

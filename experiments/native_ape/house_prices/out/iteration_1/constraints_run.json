@@ -1,0 +1,89 @@
+{
+    "constraints": [
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "describe"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "Distribution"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "skew"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "skew"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "kurt"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "kurt"
+                    ]
+                },
+                {
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+
+\section{Section 1}
+\label{sec:impl_1}
+
+Lets begin with an equation
+\begin{equation}
+\label{eq:forward_chained_rule}
+P(z_0,z_k) \leftarrow Q_1(z_0,z_1), Q_2(z_1,z_2), \dots, Q_k(z_{k-1},z_k), R_1(x_1), \dots,  R_n(x_n),
+\end{equation}
+where all $x_1, \dots, x_n \in \{z_0, \dots, z_k\}$.
+
+Also a code snippet
+\begin{minted}{prolog}
+invented(1..num_inv).
+:- #count { ID,P1,P2,P3 : meta(ID,P1,P2,P3) } != size.
+\end{minted}
+where \verb|meta/4| represents a metasubstitution.
+
+\section{Encodings}
+\subsection{Encoding 1}
+\subimport{implementation/}{encoding_1.tex}
+\subsection{Encoding 2}
+\subimport{implementation/}{encoding_1.tex}

@@ -1,0 +1,44 @@
+{
+    "constraints": [
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "na_count_percentage"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "dropna_col_i"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "filter_sd"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "drop_sd_i"
+                    ]
+                }
+            ]
+        }
+    ]
+}

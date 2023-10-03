@@ -1,0 +1,60 @@
+{
+    "ontology_path": "../../ontology/ontology_v2_DIM_2.owl",
+    "ontologyPrefixIRI": "http://www.co-ode.org/ontologies/ont.owl#",
+    "toolsTaxonomyRoot": "ToolsTaxonomy",
+    "dataDimensionsTaxonomyRoots": [
+        "DataClass",
+        "StatisticalRelevance"
+    ],
+    "tool_annotations_path": "../../ontology/tool_annotations_v2_DIM_2.json",
+    "constraints_path": "constraints_run.json",
+    "solutions_dir_path": "./solutions/",
+    "solution_length": {
+        "min": 8,
+        "max": 10
+    },
+    "solutions": "5",
+    "timeout_sec": "1000",
+    "number_of_execution_scripts": "0",
+    "number_of_generated_graphs": "5",
+    "tool_seq_repeat": "true",
+    "debug_mode": "false",
+    "use_workflow_input": "ONE",
+    "use_all_generated_data": "NONE",
+    "inputs": [
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "DependentVariable"
+            ],
+            "APE_label": [
+                "sentiment"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "review"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "StatisticalRelevance": [
+                "NoRelevance"
+            ],
+            "APE_label": [
+                "imbd_train"
+            ]
+        }
+    ],
+    "outputs": []
+}

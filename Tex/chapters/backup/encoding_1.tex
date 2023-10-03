@@ -1,0 +1,22 @@
+
+For you to understand the encoding, you have to look at this code:
+\begin{figure}
+\begin{minted}[linenos,numberblanklines=false]{prolog}
+state(X) :- pos_ex(_,X,_).
+state(X) :- neg_ex(_,X,_).
+state(Y) :- d(_,_,Y).
+
+unary_bg(P,X) :- P = @unary(X), state(X).
+binary_bg(P,X,Y) :- (P,Y) = @binary(X), state(X).
+d(P,X,Y) :- binary_bg(P,X,Y).
+\end{minted}
+\caption{Import of background knowledge in \encoding{Cli}{FC}}
+\label{fig:bk_import_fc}
+\end{figure}
+Note that \verb|unary_bg/2| is in the code.
+
+If you still havent understood this yet, look at the following example \Cref{ex:fc_bk}:
+\begin{example}
+\label{ex:fc_bk}
+See \Cref{fig:bk_import_fc}.
+\end{example}

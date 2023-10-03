@@ -1,0 +1,970 @@
+{
+    "ontology_path": "../../ontology/ontology_v2.owl",
+    "ontologyPrefixIRI": "http://www.co-ode.org/ontologies/ont.owl#",
+    "toolsTaxonomyRoot": "ToolsTaxonomy",
+    "dataDimensionsTaxonomyRoots": [
+        "DataClass",
+        "StatisticalRelevance"
+    ],
+    "tool_annotations_path": "../../ontology/tool_annotations_v2.json",
+    "constraints_path": "constraints.json",
+    "solutions_dir_path": "./solutions/",
+    "solution_length": {
+        "min": 1,
+        "max": 10
+    },
+    "solutions": "5",
+    "number_of_execution_scripts": "0",
+    "number_of_generated_graphs": "5",
+    "tool_seq_repeat": "true",
+    "debug_mode": "false",
+    "use_workflow_input": "ONE",
+    "use_all_generated_data": "ONE",
+    "inputs": [
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Id"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MSSubClass"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MSZoning"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LotFrontage"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LotArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Street"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Alley"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LotShape"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LandContour"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Utilities"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LotConfig"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LandSlope"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Neighborhood"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Condition1"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Condition2"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BldgType"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "HouseStyle"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "OverallQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "OverallCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "YearBuilt"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "YearRemodAdd"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "RoofStyle"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "RoofMatl"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Exterior1st"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Exterior2nd"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MasVnrType"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MasVnrArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "ExterQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "ExterCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Foundation"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtExposure"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtFinType1"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtFinSF1"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtFinType2"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtFinSF2"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtUnfSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "TotalBsmtSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Heating"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "HeatingQC"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "CentralAir"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Electrical"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "1stFlrSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "2ndFlrSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "LowQualFinSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GrLivArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtFullBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BsmtHalfBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "FullBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "HalfBath"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "BedroomAbvGr"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "KitchenAbvGr"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "KitchenQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "TotRmsAbvGrd"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Functional"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Fireplaces"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "FireplaceQu"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageType"
+            ]
+        },
+        {
+            "DataClass": [
+                "FloatColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageYrBlt"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageFinish"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageCars"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageQual"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "GarageCond"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "PavedDrive"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "WoodDeckSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "OpenPorchSF"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "EnclosedPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "3SsnPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "ScreenPorch"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "PoolArea"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "PoolQC"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "Fence"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MiscFeature"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MiscVal"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "MoSold"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "YrSold"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "SaleType"
+            ]
+        },
+        {
+            "DataClass": [
+                "StrColumn"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "SaleCondition"
+            ]
+        },
+        {
+            "DataClass": [
+                "IntColumn"
+            ],
+            "StatisticalRelevance": [
+                "DependentVariable"
+            ],
+            "APE_label": [
+                "SalePrice"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "StatisticalRelevance": [
+                "DependentVariable"
+            ],
+            "APE_label": [
+                "housing_train"
+            ]
+        },
+        {
+            "DataClass": [
+                "MixedDataFrame"
+            ],
+            "StatisticalRelevance": [
+                "IndependentVariable"
+            ],
+            "APE_label": [
+                "housing_train"
+            ]
+        },
+        {
+            "DataClass": [
+                "Int"
+            ],
+            "StatisticalRelevance": [
+                "PandasObjectRelevance"
+            ],
+            "APE_label": [
+                "16"
+            ]
+        },
+        {
+            "DataClass": [
+                "Int"
+            ],
+            "StatisticalRelevance": [
+                "PandasObjectRelevance"
+            ],
+            "APE_label": [
+                "9"
+            ]
+        }
+    ],
+    "outputs": [
+        {
+            "DataClass": [
+                "Figure"
+            ],
+            "StatisticalRelevance": [
+                "NoRelevance"
+            ]
+        }
+    ]
+}

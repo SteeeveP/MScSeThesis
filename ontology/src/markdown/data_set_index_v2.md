@@ -1,0 +1,22 @@
+DataSetIndex
+- PandasObjectIndex
+    - MatplotlibObjectIndex
+        - NumpyObjectIndex
+            - SklearnObjectIndex
+                - TempData
+                    - Corr
+                    - TextEmbeddingObjectIndex
+                        - EDA
+                - OriginalIndex
+                    - TextEmbeddingObjectIndex
+                        - InputData
+                    - Split
+                        - TextEmbeddingObjectIndex
+                            - TrainingData
+                        - TestData
+- SklearnObjectIndex
+- TextEmbeddingObjectIndex
+- MatplotlibObjectIndex
+- NumpyObjectIndex
+- BasicObjectIndex
+- NoIndex

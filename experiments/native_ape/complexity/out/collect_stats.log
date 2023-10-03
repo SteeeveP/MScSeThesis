@@ -1,0 +1,139 @@
+2023-08-20 20:40:09,854 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_2_COLS_10.json
+2023-08-20 21:03:34,641 - __main__ - ERROR - Error with DIM=2 COLS=10
+2023-08-20 21:03:34,642 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.HashMap$KeySet.iterator(HashMap.java:991)
+	at java.base/java.util.HashSet.iterator(HashSet.java:182)
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.disjoinClausesCollection(CNFClause.java:63)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxImplication.getCNFEncoding(SLTLxImplication.java:39)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136a20.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-20 21:03:34,642 - __main__ - INFO - Finished DIM=2 COLS=10
+2023-08-20 21:03:34,642 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_2_COLS_20.json
+2023-08-20 21:14:02,561 - __main__ - ERROR - Error with DIM=2 COLS=20
+2023-08-20 21:14:02,561 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.disjoinClausesCollection(CNFClause.java:62)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxImplication.getCNFEncoding(SLTLxImplication.java:39)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136a20.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-20 21:14:02,561 - __main__ - INFO - Finished DIM=2 COLS=20
+2023-08-20 21:14:02,561 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_2_COLS_41.json
+2023-08-20 21:19:36,349 - __main__ - ERROR - Error with DIM=2 COLS=41
+2023-08-20 21:19:36,349 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.Integer.valueOf(Integer.java:1074)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxAtom.getNegatedCNFEncoding(SLTLxAtom.java:211)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxConjunction.getNegatedCNFEncoding(SLTLxConjunction.java:70)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxImplication.getCNFEncoding(SLTLxImplication.java:36)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136cb8.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-20 21:19:36,349 - __main__ - INFO - Finished DIM=2 COLS=41
+2023-08-20 21:19:36,349 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_2_COLS_83.json
+2023-08-20 21:23:11,340 - __main__ - ERROR - Error with DIM=2 COLS=83
+2023-08-20 21:23:11,340 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOfRange(Arrays.java:3822)
+	at java.base/java.lang.StringLatin1.newString(StringLatin1.java:763)
+	at java.base/java.lang.String.substring(String.java:2720)
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.disjoin2Clauses(CNFClause.java:96)
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.disjoinClausesCollection(CNFClause.java:78)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxImplication.getCNFEncoding(SLTLxImplication.java:39)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136a20.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-20 21:23:11,340 - __main__ - INFO - Finished DIM=2 COLS=83
+2023-08-20 21:23:11,340 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_3_COLS_10.json
+2023-08-21 00:11:03,064 - __main__ - ERROR - Error with DIM=3 COLS=10
+2023-08-21 00:11:03,065 - __main__ - ERROR - Timeout. Total solving took longer than the timeout: 10000000 ms.
+
+2023-08-21 00:11:03,065 - __main__ - INFO - Finished DIM=3 COLS=10
+2023-08-21 00:11:03,065 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_3_COLS_20.json
+2023-08-21 01:03:59,347 - __main__ - ERROR - Error with DIM=3 COLS=20
+2023-08-21 01:03:59,348 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.lang.StringLatin1.newString(StringLatin1.java:763)
+	at java.base/java.lang.String.substring(String.java:2720)
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.disjoin2Clauses(CNFClause.java:96)
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.disjoinClausesCollection(CNFClause.java:78)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxConjunction.getNegatedCNFEncoding(SLTLxConjunction.java:72)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxImplication.getCNFEncoding(SLTLxImplication.java:36)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136cb8.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-21 01:03:59,348 - __main__ - INFO - Finished DIM=3 COLS=20
+2023-08-21 01:03:59,348 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_3_COLS_41.json
+2023-08-21 01:33:12,435 - __main__ - ERROR - Error with DIM=3 COLS=41
+2023-08-21 01:33:12,435 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxVariableSubstitutionCollection.<init>(SLTLxVariableSubstitutionCollection.java:31)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136a20.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-21 01:33:12,436 - __main__ - INFO - Finished DIM=3 COLS=41
+2023-08-21 01:33:12,436 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_3_COLS_83.json
+2023-08-21 01:47:57,501 - __main__ - ERROR - Error with DIM=3 COLS=83
+2023-08-21 01:47:57,501 - __main__ - ERROR - Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.ArrayList.grow(ArrayList.java:239)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base/java.util.ArrayList.add(ArrayList.java:467)
+	at nl.uu.cs.ape.models.sltlxStruc.CNFClause.<init>(CNFClause.java:41)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxAtom.getCNFEncoding(SLTLxAtom.java:202)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxImplication.getCNFEncoding(SLTLxImplication.java:37)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.lambda$createCNFEncoding$1(SLTLxFormula.java:51)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula$$Lambda$245/0x0000000801136a20.accept(Unknown Source)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.createCNFEncoding(SLTLxFormula.java:50)
+	at nl.uu.cs.ape.models.sltlxStruc.SLTLxFormula.appendCNFToFile(SLTLxFormula.java:34)
+	at nl.uu.cs.ape.core.implSAT.SATSynthesisEngine.synthesisEncoding(SATSynthesisEngine.java:197)
+	at nl.uu.cs.ape.APE.executeSynthesis(APE.java:330)
+	at nl.uu.cs.ape.APE.runSynthesis(APE.java:268)
+	at nl.uu.cs.ape.Main.main(Main.java:70)
+
+2023-08-21 01:47:57,501 - __main__ - INFO - Finished DIM=3 COLS=83
+2023-08-21 01:47:57,501 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_4_COLS_10.json
+2023-08-21 10:23:29,399 - __main__ - ERROR - Error with DIM=4 COLS=10
+2023-08-21 10:23:29,400 - __main__ - ERROR - Timeout. Total solving took longer than the timeout: 10000000 ms.
+
+2023-08-21 10:23:29,400 - __main__ - INFO - Finished DIM=4 COLS=10
+2023-08-21 10:23:29,400 - __main__ - INFO - java -Xmx8g -jar ../../APE/APE-2.0.3-executable.jar config_DIM_4_COLS_20.json

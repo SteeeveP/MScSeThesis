@@ -1,0 +1,267 @@
+Tool
+- Inplace
+- EDAFeatureEngineering
+    - ColumnOperation
+        - StringOperation
+            - Inplace
+                - Replace_i
+                    - {(StrSeries,,,),(Str,,,),(Str,,,)} -> {}
+                    - {(DataFrame,,,A),(StrColumn,,,A),(Str,,,),(Str,,,)} -> {}
+                - strip_i
+                    - {(StrSeries,,,)} -> {}
+                    - {(DataFrame,,,A),(StrColumn,,,A)} -> {}
+            - Match
+                - ->
+            - Extract
+                - ->
+            - Replace
+                - {(StrSeries,,A,A),(Str,,,),(Str,,,)} -> {(StrSeries,,A,A)}
+                - {(DataFrame,,,A),(StrColumn,,A,A),(Str,,,),(Str,,,)} -> {(StrSeries,,A,A)}
+            - strip
+                - {(StrSeries,A,A,A)} -> {(StrSeries,A,A,A)}
+                - {(DataFrame,,,A),(StrColumn,,A,A)} -> {(StrSeries,,A,A)}
+    - IndexOperation
+    - TableSummaryStatistics
+        - describe
+            - {(DataFrame,,,)} -> {(DescribeDataFrame,,,EDA)}
+            - {(DataFrame,,,A),(Column,,,A)} -> {(DescribeSeries,,,EDA)}
+            - {(Series,,,)} -> {(DescribeSeries,,,EDA)}
+        - value_counts
+            - {(DataFrame,,,)} -> {(IntSeries,,,EDA)}
+            - {(DataFrame,,,A),(Column,,,A)} -> {(IntSeries,,,EDA)}
+            - {(Series,,,)} -> {(IntSeries,,,EDA)}
+        - mean
+            - {(DataFrame,,,)} -> {(FloatSeries,,,EDA)}
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Float,,,)}
+            - {(NumberSeries,,,)} -> {(Float,,,)}
+        - med
+            - {(DataFrame,,,)} -> {(FloatSeries,,,EDA)}
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Float,,,)}
+            - {(NumberSeries,,,)} -> {(Float,,,)}
+        - skew
+            - {(DataFrame,,,)} -> {(FloatSeries,,,EDA)}
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Float,,,)}
+            - {(NumberSeries,,,)} -> {(Float,,,)}
+        - kurt
+            - {(DataFrame,,,)} -> {(FloatSeries,,,EDA)}
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Float,,,)}
+            - {(NumberSeries,,,)} -> {(Float,,,)}
+        - corr
+            - {(DataFrame,,,)} -> {(DataFrame,,,Corr)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A)} -> {(Float,,,)}
+            - {(NumberSeries,,,A),(NumberSeries,,,A)} -> {(Float,,,)}
+        - k_most_corr_indep_var_corr_matrix
+            - {(DataFrame,,,A:OriginalIndex),(NumberColumn,,DependentVariable,A:OriginalIndex), (Int,,,)} -> {(FloatDataFrame,,,Corr)}
+    - MissingData
+        - TypeConversion
+            - isna
+                - {(Series,A,A,A)} -> {(BoolSeries,A,A,A)}
+                - {(DataFrame,A,A,A),(Column,A,A,A)} -> {(BoolSeries,A,A,A)}
+                - {(DataFrame,A,A,A)} -> {(BoolDataFrame,A,A,A)}
+            - notna
+                - {(Series,A,A,A)} -> {(BoolSeries,A,A,A)}
+                - {(DataFrame,A,A,A),(Column,A,A,A)} -> {(BoolSeries,A,A,A)}
+                - {(DataFrame,A,A,A)} -> {(BoolDataFrame,A,A,A)}
+            - astype
+                - {(IntSeries,A,A,A)} -> {(FloatSeries,A,A,A)}
+                - {(FloatSeries,A,A,A)} -> {(IntSeries,A,A,A)}
+                - {(StrSeries,A,A,A)} -> {(FloatSeries,A,A,A)}
+                - {(StrSeries,A,A,A)} -> {(DateTimeSeries,A,A,A)}
+            - dt_year
+                - {(DataFrame,,A,A), (DateTimeColumn,,A,A)} -> {(IntSeries,,A,A)}
+                - {(DateTimeSeries,A,A,A)} -> {(IntSeries,A,A,A)}
+            - dt_month
+                - {(DataFrame,,A,A), (DateTimeColumn,,A,A)} -> {(IntSeries,,A,A)}
+                - {(DateTimeSeries,A,A,A)} -> {(IntSeries,A,A,A)}
+        - TableManipulation
+            - interpolate_groupby_k_most_corr_median
+                - interpolate_groupby_3_most_corr_median
+                    - {(A:NumberDataFrame,A,A,A:OriginalIndex)} -> {(A:NumberDataFrame,A,A,A:OriginalIndex)}
+                    - {(MixedDataFrame,A,A,A:OriginalIndex)} -> {(MixedDataFrame,A,A,A:OriginalIndex)}
+            - Interpolate
+                - Inplace
+                    - linear_interpolate_i
+                        - {(NumberSeries,A,A,A)} -> {}
+                        - {(DataFrame,A,A,A),(NumberColumn,A,A,A)} -> {}
+                - linear_interpolate
+                    - {(NumberSeries,A,A,A)} -> {(FloatSeries,A,A,A)}
+                    - {(DataFrame,A,A,A)} -> {(MixedDataFrame,A,A,A)}
+        - TableSummaryStatistics
+            - na_count
+                - {(DataFrame,A,A,)} -> {(IntSeries,A,A,EDA)}
+            - na_count_percentage
+                - {(DataFrame,A,A,)} -> {(FloatSeries,A,A,EDA)}
+        - IndexOperation
+            - Inplace
+                - dropna_i
+                    - {(DataFrame,A,A,A)} -> {}
+                    - {(DataFrame,A,A,A),(Column,A,A,A)} -> {}
+                    - {(Series,,,EDA)} -> {}
+            - dropna
+                - {(A:DataFrame,A,A,A)} -> {(A:DataFrame,A,A,A)}
+                - {(A:Series,A,A,EDA)} -> {(A:Series,A,A,EDA)}
+    - Outliers
+        - IndexOperation
+            - filter_SD
+                - {(A:DataFrame,A,A,A:OriginalIndex),(Column,A,A,A:OriginalIndex)} -> {(A:DataFrame,A,A,A:OriginalIndex)}
+            - Inplace
+                - drop_SD_i
+                    - {(DataFrame,A,A,A:OriginalIndex),(Column,A,A,A:OriginalIndex)} -> {}
+            - drop_SD
+                - {(A:DataFrame,A,A,A:OriginalIndex),(Column,A,A,A:OriginalIndex)} -> {(A:DataFrame,A,A,A:OriginalIndex)}
+    - ReshapingSorting
+        - pivot
+            - {(DataFrame,A,A,A),(Column,A,A,A),(Column,A,A,A),(Column,A,A,A)} -> {(MixedDataFrame,A,A,EDA)}
+        - pivot_table_mean
+            - {(DataFrame,A,A,A),(Column,A,A,A),(Column,A,A,A),(NumberColumn,A,A,A)} -> {(FloatDataFrame,A,A,EDA)}
+        - IndexOperation
+            - Inplace
+                - drop_duplicates_i
+                    - {(DataFrame,,,OriginalIndex)} -> {}
+                    - {(A:DataFrame,A,A,A:OriginalIndex),(Column,A,A,A:OriginalIndex)} -> {(A:DataFrame,A,A,A:OriginalIndex)}
+            - drop_duplicates
+                - {(A:DataFrame,A,A,A:OriginalIndex)} -> {(A:DataFrame,A,A,A:OriginalIndex)}
+                - {(A:DataFrame,A,A,A:OriginalIndex),(A:Series,A,A,A:OriginalIndex)} -> {(A:DataFrame,A,A,A:OriginalIndex),(A:Series,A,A,A:OriginalIndex)}
+                - {(A:Series,A,A,EDA)} -> {(A:Series,A,A,EDA)}
+        - Crosstab
+            - ->
+    - TableManipulation
+        - Normalization
+            - NumericNorm
+                - Inplace
+                    - num_center_mean_i
+                        - {(DataFrame,NonModified,,)} -> {}
+                    - num_min_max_norm_i
+                        - {(DataFrame,NonModified,,)} -> {}
+                    - num_z_score_i
+                        - {(DataFrame,NonModified,,)} -> {}
+                - num_center_mean
+                    - {(A:DataFrame,NonModified,A,A)} -> {(A:DataFrame,Scaled,A,A)}
+                - num_min_max_norm
+                    - {(A:DataFrame,NonModified,A,A)} -> {(A:DataFrame,Scaled,A,A)}
+                - num_z_score
+                    - {(A:DataFrame,NonModified,A,A)} -> {(A:DataFrame,Scaled,A,A)}
+            - ColumnOperation
+                - center_mean
+                    - {(NumberSeries,NonModified,A,A)} -> {(FloatSeries,Scaled,A,A)}
+                    - {(DataFrame,,,A),(NumberColumn,NonModified,A,A)} -> {(FloatSeries,Scaled,A,A)}
+                - min_max_norm
+                    - {(NumberSeries,NonModified,A,A)} -> {(FloatSeries,Scaled,A,A)}
+                    - {(DataFrame,,,A),(NumberColumn,NonModified,A,A)} -> {(FloatSeries,Scaled,A,A)}
+                - z_score
+                    - {(NumberSeries,NonModified,A,A)} -> {(FloatSeries,Scaled,A,A)}
+                    - {(DataFrame,,,A),(NumberColumn,NonModified,A,A)} -> {(FloatSeries,Scaled,A,A)}
+                - Inplace
+                    - center_mean_i
+                        - {(DataFrame,,,A),(NumberColumn,NonModified,,A)} -> {}
+                    - min_max_norm_i
+                        - {(DataFrame,,,A),(NumberColumn,NonModified,,A)} -> {}
+                    - z_score_i
+                        - {(DataFrame,,,A),(NumberColumn,NonModified,,A)} -> {}
+        - ColumnOperation
+            - cut
+                - ->
+            - log1p
+                - {(NumberSeries,A,A,A)} -> {(FloatSeries,A,A,A)}
+                - {(DataFrame,,,A),(NumberColumn,A,A,A)} -> {(FloatSeries,A,A,A)}
+            - log
+                - {(NumberSeries,A,A,A)} -> {(FloatSeries,A,A,A)}
+                - {(DataFrame,,,A),(NumberColumn,A,A,A)} -> {(FloatSeries,A,A,A)}
+                - {(DataFrame,A,A,A)} -> {(DataFrame,A,A,A)}
+            - boxcox
+                - {(NumberSeries,A,A,A)} -> {(FloatSeries,A,A,A)}
+                - {(DataFrame,,,A),(NumberColumn,A,A,A)} -> {(FloatSeries,A,A,A)}
+            - Inplace
+                - log1p_i
+                    - {(DataFrame,,,A),(NumberColumn,,,A)} -> {}
+                - log_i
+                    - {(DataFrame,,,A),(NumberColumn,,,A)} -> {}
+                - boxcox_i
+                    - {(DataFrame,,,A),(NumberColumn,,,A)} -> {}
+        - replace
+            - ->
+        - TransformerOperation
+            - Inplace
+                - fit_transformer_i
+                    - {(Transformer,NonFitted,,), (DataFrame,,,OriginalIndex)} -> {}
+                    - {(IterativeImputer,NonFitted,,), (Series,,,OriginalIndex)} -> {}
+                - transform_i
+                    - {(Transformer,Fitted,,), (DataFrame,,,OriginalIndex)} -> {}
+                    - {(IterativeImputer,Fitted,,), (Series,,,OriginalIndex)} -> {}
+                - fit_transform_i
+                    - {(Transformer,NonFitted,,), (DataFrame,,,OriginalIndex)} -> {}
+                    - {(IterativeImputer,NonFitted,,), (Series,,,OriginalIndex)} -> {}
+            - fit_transformer
+                - {(A:Transformer,NonFitted,,), (DataFrame,,A,A:OriginalIndex)} -> {(A:Transformer,Fitted,A,A:OriginalIndex)}
+                - {(IterativeImputer,NonFitted,,), (Series,,A,A:OriginalIndex)} -> {(IterativeImputer,Fitted,A,A:OriginalIndex)}
+            - transform
+                - {(Transformer,Fitted,A,), (DataFrame,A,A,A:OriginalIndex)} -> {(MixedDataFrame,A,A,A:OriginalIndex)}
+                - {(IterativeImputer,Fitted,A,), (A:Series,A,A,A:OriginalIndex)} -> {(A:Series,A,A,A:OriginalIndex)}
+            - fit_transform
+                - {(A:Transformer,NonFitted,,), (DataFrame,A\Fitted,A,A:OriginalIndex)} -> {(A:Transformer,Fitted,A,A:OriginalIndex), (MixedDataFrame,A\Fitted,A,A:OriginalIndex)}
+                - {(IterativeImputer,NonFitted,,), (A:Series,A,A,A:OriginalIndex)} -> {(IterativeImputer,Fitted,A,A:OriginalIndex), (A:Series,A,A,A:OriginalIndex)}
+- Plotting
+    - MultiPlotGrid
+        - FacetGrid
+            - ->
+        - PairGrid
+            - pairplot
+                - {(DataFrame,,,A)} -> {(Figure,,,A)}
+                - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Figure,,,A)}
+                - {(DataFrame,,,A),(Column,,IndependantVariable,A),(Int,,,)} -> {(Figure,,,A)}
+                - {(DataFrame,,,A), (Column,,IndependantVariable,A), (Int,,,), (NumberColumn,,,A)} -> {(Figure,,,A)}
+    - Relationship
+        - scatterplot
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A),(Column,,,A),(Axes,,,A)} -> {(Figure,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A),(Column,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+        - heatmap
+            - {(DataFrame,,,Corr)} -> {(Figure,,,Corr),(Axes,,,A)}
+            - {(DataFrame,,,A),(Column,,,A),(Column,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+        - barplot
+            - {(DataFrame,,,A),(Column,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(Column,,,A),(NumberColumn,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+    - Distribution
+        - jointplot
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A),(Column,,,A),(Axes,,,A)} -> {(Figure,,,A)}
+        - kdeplot
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+        - histplot
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+        - countplot
+            - {(DataFrame,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(Column,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+        - boxplot
+            - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(Column,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A), (NumberColumn,,,A),(Figure,,,), (Axes,,,)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(Column,,,A), (Figure,,,A), (Axes,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(Column,,,A),(Column,,,A), (Figure,,,A), (Axes,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+    - normality_plots
+        - {(DataFrame,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+        - {(NumberSeries,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+    - Trends
+        - lineplot
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+            - {(DataFrame,,,A),(NumberColumn,,,A),(NumberColumn,,,A),(Column,,,A),(Column,,,A)} -> {(Figure,,,A),(Axes,,,A)}
+- Utility
+    - Constructor
+        - init_sklearn_estimator
+            - {} -> {(A:SklearnObject,NonFitted,,)}
+        - set_figure_size
+            - {(Int,,,), (Int,,,)} -> {(Figure,,,), (Axes,,,)}
+    - TableAccess
+        - select_col
+            - {(A:DataFrame,A,A,InputData), (StrColumn,A,A,InputData)} -> {(StrSeries,A,A,InputData)}
+            - {(A:DataFrame,A,A,InputData), (BoolColumn,A,A,InputData)} -> {(BoolSeries,A,A,InputData)}
+            - {(A:DataFrame,A,A,InputData), (IntColumn,A,A,InputData)} -> {(IntSeries,A,A,InputData)}
+            - {(A:DataFrame,A,A,InputData), (FloatColumn,A,A,InputData)} -> {(FloatSeries,A,A,InputData)}
+            - {(A:DataFrame,A,A,InputData), (DateTimeColumn,A,A,InputData)} -> {(DateTimeSeries,A,A,InputData)}
+            - {(A:DataFrame,A,A,InputData), (MixedColumn,A,A,InputData)} -> {(MixedSeries,A,A,InputData)}
+    - rotate_x_labels
+        - {(Figure,,,)} -> {(Figure,,,)}

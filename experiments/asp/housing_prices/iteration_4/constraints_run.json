@@ -1,0 +1,75 @@
+{
+    "constraints": [
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "log"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "use_m",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "normality_plots"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "normality_plots"
+                    ]
+                },
+                {
+                    "DataClass": [
+                        "Column"
+                    ],
+                    "StatisticalRelevance": [
+                        "DependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "operation_input",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "normality_plots"
+                    ]
+                },
+                {
+                    "DataClass": [
+                        "Column"
+                    ],
+                    "StatisticalRelevance": [
+                        "IndependentVariable"
+                    ]
+                }
+            ]
+        },
+        {
+            "constraintid": "connected_op",
+            "parameters": [
+                {
+                    "ToolsTaxonomy": [
+                        "log"
+                    ]
+                },
+                {
+                    "ToolsTaxonomy": [
+                        "normality_plots"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+
+This background contains a very interesting historical classification of the topic and some other stuff.
+
+Here are some equations:
+\begin{equation}
+\label{eq:hypothesis}
+\forall e^+ \in E^+: B \cup H \vDash e^+
+\quad \mathrm{and} \quad
+\nexists e^- \in E^-: B\cup H \vDash e^-.
+\end{equation}
+This one is also nice
+\begin{equation}
+\label{eq:metarule_form}
+P(x,y) \leftarrow Q_1(x_1,y_1), \dots, Q_k(x_k,y_k), R_1(z_1), \dots, R_n(z_n),
+\end{equation}
+where \(P\(, \(Q_1, \dots, Q_k\)and \(R_1, \dots R_n\)are higher order variables, and \(x\(, \(y\(, \(x_1, \dots, x_k\(, \(y_1, \dots, y_k\)and \(z_1, \dots, z_n\)are first order variables.
+For more information see \Cref{fig:used_metarules}.
+
+\begin{figure}
+\begin{tabularx}{\textwidth}{XlX}
+\(P(x,y) \leftarrow R_1(x), Q_1(x,y)\)\hfill (precon) & \hfill & \(P(x,y) \leftarrow Q_1(x,z), Q_2(z,y)\)\hfill (chain)\\
+\(P(x,y) \leftarrow Q_1(x,y), R_1(y)\)\hfill (postcon) & \hfill & \(P(x,y) \leftarrow Q_1(x,z), P(z,y)\)\hfill (tailrec)
+\end{tabularx}
+\caption{This is a table}
+\label{fig:used_metarules}
+\end{figure}
+
+Now lets do an example
+
+\begin{example}
+\label{ex:plants}
+
+This is an interesting description of the example setup.
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{|X|l|l|}
+\hline
+Background Knowledge & Pos. examples & Neg. examples \\
+\hline \hline
+% background knowledge
+\(watered(x) \leftarrow \)\hfill (for \(x \in \{1, 2, 4\}\()		& \(pred(1, 3) \leftarrow\)	& \(pred(1, 5) \leftarrow \)\\
+\(climate(x) \leftarrow \)\hfill (for \(x \in \{1, 3, 7\}\()		& 							& \(pred(1, 7) \leftarrow \)\\
+\(mutates(x,y) \leftarrow\)										& 							& \\
+\hfill (for \((x,y) \in \{(1, 2), (2, 3), (1, 4),\mathop{\hphantom{\widthof{)}}}\)& & \\
+\hfill \((4, 5), (1, 6), (6, 7)\}\() & & \\
+\hline
+\end{tabularx}
+\caption{Table in \Cref{ex:plants}}
+\label{tab:plants}
+\end{table}
+
+Now comes the solution:
+\begin{align}
+& invented1(x,y) \leftarrow watered(x),\ mutates(x,y) \label{eq:plants_hyp_1}\\
+& pred(x,y) \leftarrow invented1(x,y),\ climate(y) \label{eq:plants_hyp_2}\\
+& pred(x,y) \leftarrow invented1(x,z),\ pred(z,y) \label{eq:plants_hyp_3}
+\end{align}
+The solution consists of \Cref{eq:plants_hyp_1}, \Cref{eq:plants_hyp_2} and \Cref{eq:plants_hyp_3}.
+\end{example}
+
+
+Also this background contains subfigures. See \Cref{lst:ext_hexlite} and \Cref{lst:ext_clingo}.
+\begin{figure}
+\centering
+\begin{subfigure}{0.45\textwidth}
+\begin{minted}{prolog}
+v(X) :- v(Y), X = @e(Y).
+\end{minted}
+\caption{Relevant code 1}
+\label{lst:ext_clingo}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.45\textwidth}
+\begin{minted}{prolog}
+v(X) :- v(Y), &e[Y](X).
+\end{minted}
+\caption{Relevant code 2}
+\label{lst:ext_hexlite}
+\end{subfigure}
+\caption{Relevant code}
+\end{figure}
