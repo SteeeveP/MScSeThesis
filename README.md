@@ -99,24 +99,24 @@ path: [`experiments/native_ape/complexity/src/`](experiments/native_ape/complexi
 Evaluation of native APE on the data science ontology with the three use cases:
 
 - House price EDA: [`experiments/native_ape/house_prices/`](experiments/native_ape/house_prices/)
-- Titianic predictive modeling: [`experiments/native_ape/titanic/`](experiments/native_ape/titanic/)
-- IMDB Text analyis: [`experiments/native_ape/imdb/`](experiments/native_ape/imdb)
+- Titanic predictive modeling: [`experiments/native_ape/titanic/`](experiments/native_ape/titanic/)
+- IMDB Text analysis: [`experiments/native_ape/imdb/`](experiments/native_ape/imdb)
 
 File to run the experiments:
 - EDA: [`experiments/native_ape/run_ape_housing.ipynb`](experiments/native_ape/run_ape_housing.ipynb)
 - Predictive modeling: [`experiments/native_ape/run_ape_titanic.ipynb`](experiments/native_ape/run_ape_titanic.ipynb)
 - Text analysis: [`experiments/native_ape/run_ape_imdb.ipynb`](experiments/native_ape/run_ape_imdb.ipynb)
 
-All use case folder have the same structure:
+All use case folders have the same structure:
 - `out/`: Outputs
     - `iteration_?`: Constraint set experiment folder
         - `Figures/`: Workflow graphs produced by APE
-        - `images/`: Experiment artifacts if any
+        - `images/`: Experiment artifacts, if any
         - `config_run.json`: APE config
         - `constraints_run.json`: APE constraints
         - `solutions.txt`: APE solutions file
         - `workflow_?_start_?.ipynb`: Workflow notebooks
-- `src/`: Source code`
+- `src/`: Source code
     - `train.csv`: Input data
     - `wrapper.ipynb`: Input data to APE input config
 
